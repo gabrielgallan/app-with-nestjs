@@ -6,6 +6,7 @@ import { envSchema } from './env'
 import { AuthModule } from './auth/auth.module'
 import { AuthenticateController } from './http/controllers/authenticate.controller'
 import { GetProfileController } from './http/controllers/get-profile.controller'
+import { OpenAccountController } from './http/controllers/open-account.controller'
 
 @Module({
   imports: [ConfigModule.forRoot({
@@ -17,7 +18,8 @@ import { GetProfileController } from './http/controllers/get-profile.controller'
   controllers: [
     RegisterController,
     AuthenticateController,
-    GetProfileController
+    GetProfileController,
+    OpenAccountController
   ],
   providers: [
     PrismaService,

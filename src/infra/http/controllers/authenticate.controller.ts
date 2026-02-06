@@ -1,4 +1,4 @@
-import { BadRequestException, Body, Controller, HttpCode, NotFoundException, Post, UnauthorizedException, UsePipes } from '@nestjs/common'
+import { Body, Controller, HttpCode, Post, UnauthorizedException, UsePipes } from '@nestjs/common'
 import { PrismaService } from '../../prisma/prisma.service'
 import { JwtService } from '@nestjs/jwt'
 import z from 'zod'

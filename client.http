@@ -28,3 +28,14 @@ Content-Type: application/json
 GET {{baseUrl}}/api/profile
 Content-Type: application/json
 Authorization: Bearer {{authToken}}
+
+###
+
+# @name open_account
+POST  {{baseUrl}}/api/accounts
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+    "initialBalance": 40
+}

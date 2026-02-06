@@ -10,7 +10,7 @@ import { JwtStrategy } from './jwt.strategy';
     PassportModule,
     JwtModule.registerAsync({
         inject: [ConfigService],
-        async useFactory(config: ConfigService<Env, true>) {
+        useFactory(config: ConfigService<Env, true>) {
             const privateKey = config.get('JWT_PRIVATE_KEY', { infer: true })
             const publicKey = config.get('JWT_PUBLIC_KEY', { infer: true })
 

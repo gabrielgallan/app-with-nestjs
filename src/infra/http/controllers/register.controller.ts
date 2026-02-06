@@ -32,7 +32,7 @@ export class RegisterController {
       throw new ConflictException('User already exists')
     }
 
-    const user = await this.prisma.user.create({
+    await this.prisma.user.create({
       data: {
         name,
         email,
